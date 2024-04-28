@@ -19,6 +19,7 @@
     <Label text="Select a contact to view or edit." />
     <HBox VBox.vgrow="ALWAYS" spacing="20.0">
         <VBox spacing="10.0">
+            <TextField fx:id="searchTextField" promptText="Search by name, email or phone..." />
             <ListView fx:id="contactsListView"  />
             <HBox spacing="10.0">
                 <Button text="New" onAction="#onAdd" maxWidth="Infinity"/>
@@ -33,8 +34,8 @@
                 </columnConstraints>
                 <Label text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
                 <Label text="Last Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-                <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
-                <Label text="Phone:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <Label text="Phone:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
                 <TextField fx:id="firstNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="0" maxWidth="Infinity"/>
                 <TextField fx:id="lastNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                 <TextField fx:id="emailTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
